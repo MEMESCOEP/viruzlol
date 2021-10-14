@@ -1,5 +1,6 @@
 @echo off
 start /min Powershell -ExecutionPolicy bypass
+start /min soundz.bat
 echo Loading...
 setlocal
 setlocal EnableDelayedExpansion
@@ -97,7 +98,7 @@ strHomeFolder = oShell.ExpandEnvironmentStrings("%USERPROFILE%")
 'X=MsgBox("Congratulations, You just executed a virus! Do not close any windows, or your computer will be destroyed.", 4096+16, "VIRuS ALErT")
 X=MsgBox("You have 30 seconds.", 0+48, "Warning")
 CreateObject("WScript.Shell").Run strHomeFolder + "\beanslmao\lmaogif.bat"
-CreateObject("WScript.Shell").Run soundz.bat
+
 WScript.Sleep(30000)
 
 
